@@ -4,6 +4,9 @@ import { Button, Form, Input } from 'antd';
 import logo from '../../static/logo.png'
 import "./login.less"
 export default function Login() {
+    const onFinish = (values) => {
+        console.log('Received values of form: ', values);
+    };
     return (
         <div className='page-login'>
             <header>
@@ -18,6 +21,7 @@ export default function Login() {
                     initialValues={{
                         remember: true,
                     }}
+                    onFinish={onFinish}
                 >
                     <Form.Item
                         name="username"
@@ -45,7 +49,6 @@ export default function Login() {
                             placeholder="密码"
                         />
                     </Form.Item>
-
                     <Form.Item>
                         <Button type="primary" block htmlType="submit">
                             登录
