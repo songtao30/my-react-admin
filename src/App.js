@@ -1,5 +1,4 @@
 import { Button } from "antd";
-import "./app.less";
 function App() {
   return (
     <div>
