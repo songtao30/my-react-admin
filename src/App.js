@@ -1,9 +1,9 @@
-import { Button } from "antd";
+import Login from "./pages/Login";
 function App() {
   return (
-    <div>
-      <Button type="primary">Button</Button>
-    </div>
+    <>
+      <Login />
+    </>
   );
 }
 
